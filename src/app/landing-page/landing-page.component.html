@@ -1,0 +1,38 @@
+<div class="content">
+  <div class="slide" id="first--slide">
+
+    <span id="circle--blue">
+          <span class="circle--white"></span>
+    </span>
+
+    <span id="circle--yellow">
+          <span class="circle--white"></span>
+    </span>
+    <span id="circle--red">
+    </span>
+    <span id="polygone"></span>
+
+    <section class="text">
+
+      <span class="title">Nous aidons <span class="color">les Ecoles</span></span>
+      <span class="title">a digitaliser <span class="color">leur Gestion</span></span>
+
+      <div class="subs">
+        <span class="subtitle">Un ensemble d'otion vous permettant de gere votre ecole en quelques cliques.</span>
+        <span class="subtitle">Une vision d'ensemble sur l'evolution de votre ecole.</span>
+      </div>
+
+      <p-button label="Rejoindre Maintenant" [outlined]="true" (click)="openAuthForm()"></p-button>
+      <app-auth-form [authForm]="openForm" (closeEvent)="closeModal($event)" (changeFormEvent)="changeForm($event)" [hadAcc]="hadAccount"></app-auth-form>
+    </section>
+  </div>
+  <div class="slide" id="second-slide">
+      <span class="triangle"></span>
+  </div>
+  <div class="slide" id="troisieme-slide">
+      <div class="troisieme-slide"></div>
+      <div class="backdrope"></div>
+      <div class="text-panel"></div>
+  </div>
+  <app-footer></app-footer>
+</div>

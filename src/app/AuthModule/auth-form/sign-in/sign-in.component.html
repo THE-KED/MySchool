@@ -1,0 +1,40 @@
+<div class="card flex justify-content-center">
+  <p-card header="Connexion" subheader="Entrez votre identifiant et mot de passe" [style]="{ width: '360px' }">
+    <ng-template pTemplate="header">
+      <img alt="Card" src="assets/icons/polygon-scatter-haikei%20(1).svg" width="360px" height="150px"/>
+      <div class="wrapper">
+        <svg>
+          <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+            LOGO
+          </text>
+        </svg>
+      </div>
+    </ng-template>
+
+    <div class="flex flex-column md field--content">
+      <p-inputGroup>
+        <p-inputGroupAddon>
+          <i class="pi pi-user"></i>
+        </p-inputGroupAddon>
+        <input pInputText placeholder="Username" />
+      </p-inputGroup>
+
+      <p-inputGroup>
+        <p-inputGroupAddon>
+          <i class="pi pi-key"></i>
+        </p-inputGroupAddon>
+        <p-password class="pass" [toggleMask]="true" [style]="{width:'100%'}"></p-password>
+      </p-inputGroup>
+
+      <span class="compte">Pas de compte ? <p-button label="cree un compte" [link]="true" (click)="changeFormModal()"></p-button></span>
+      <div class="sociale">
+        <p-button icon="pi pi-google" [rounded]="true" [outlined]="true"></p-button>
+        <p-button icon="pi pi-facebook" [rounded]="true" [outlined]="true"></p-button>
+      </div>
+    </div>
+    <ng-template pTemplate="footer">
+      <p-button label="Confirmer" icon="pi pi-check"></p-button>
+      <p-button label="Annuler" (click)="closeModal()" icon="pi pi-times" [outlined]="true" styleClass="p-button-secondary" [style]="{ 'margin-left': '.5em' }"></p-button>
+    </ng-template>
+  </p-card>
+</div>

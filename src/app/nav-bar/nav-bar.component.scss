@@ -1,0 +1,20 @@
+:host ::ng-deep .p-toolbar {
+  position:fixed;
+  width: 100%;
+  background: rgba(250, 250, 250, 0.8);
+  backdrop-filter: blur(7px);
+  z-index: 1000;
+}
+button{
+  margin: 0 4px;
+}
+.p-button.p-button-text {
+  color: #fff !important;
+}
+.logo{
+  position: absolute;
+  top:3px;
+  left:0;
+  opacity: 1;
+  height: 65px;
+}
